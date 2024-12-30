@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regalo de especial de Año nuevo</title>
+  <style>
+    /* Estilos CSS dentro del archivo HTML */
+    body {
+      background-image: url('fondo1.jpeg'); /* Fondo */
+      background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+      background-position: center center; /* Centra la imagen */
+      background-attachment: fixed; /* Hace que la imagen no se mueva al hacer scroll */
+      color: white; /* Color del texto para que contraste con la imagen */
+      text-align: center; /* Centra el contenido */
+      margin: 0; /* Elimina márgenes */
+      padding: 50px; /* Agrega espacio alrededor del contenido */
+      height: 100vh; /* Asegura que el cuerpo ocupe toda la altura de la pantalla */
+      box-sizing: border-box; /* Asegura que el padding no haga que el body se desborde */
+      position: relative; /* Necesario para la posición absoluta del cuadro de texto */
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.5em;
+    }
+
+    /* Estilos para el GIF */
+    #gif {
+      margin-top: 30px;
+      margin-bottom: 20px;
+      position: relative; /* Necesario para la superposición */
+      display: inline-block; /* Asegura que el gif se comporta como bloque en línea */
+    }
+
+    /* Estilos para el cuadro de texto */
+    #text-box {
+      display: none; /* Inicialmente está oculto */
+      width: 300px;
+      height: 300px;
+      position: absolute; /* Lo coloca sobre el GIF */
+      top: 60px; /* Ajusta la posición para que esté 2 cm más abajo del GIF */
+      left: 50%; /* Centra el cuadro de texto */
+      transform: translateX(-50%); /* Asegura que el cuadro esté centrado */
+      padding: 10px;
+      border: 1px solid #ccc;
+      background-color: white;
+      color: black;
+      text-align: center;
+      font-size: 1.2em;
+    }
+
+    /* Estilos para el botón */
+    button {
+      padding: 10px 20px;
+      font-size: 1.2em;
+      background-color: #4CAF50; /* Color verde */
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background-color: #45a049; /* Color verde más oscuro al pasar el ratón */
+    }
+
+    /* Estilo para el textarea (cuadro de texto) */
+    #textarea {
+      width: 100%;
+      height: 100%;
+      font-size: 1.2em; /* Asegura que el texto sea legible */
+      padding: 10px;
+      border: none;
+      box-sizing: border-box; /* Hace que el padding no afecte el tamaño */
+      resize: none; /* Evita que el usuario cambie el tamaño */
+    }
+  </style>
+</head>
+<body>
+  <h1>¡¡Feliiiz Añoooo niño!!</h1>
+  <p>No es mucho, pero aún así espero te guste este pequeño detalle de mi parte <3 .</p>
+
+  <!-- GIF centrado debajo del texto -->
+  <div id="gif">
+    <img src="sobre.gif" alt="Gif animado" style="max-width: 100%; height: auto;">
+  </div>
+
+  <!-- Botón "Click here" -->
+  <button onclick="mostrarTexto()">Click here</button>
+
+  <!-- Cuadro de texto para agregar texto -->
+  <div id="text-box">
+    <textarea id="textarea">
+Hola!!  
+Feliz año nuevo!!
+
+Espero este nuevo comienzo este lleno de metas y propositos para ti, se que cumpliras todos ellos, eres una persona muy capaz, además tu bonita y agradable personalidad te llevará tan lejos como te lo propongas.
+
+Gracias por formar parte de algunos momentos de mi año, aun a lo lejos te mando un abrazo, te deseo un bonito año lleno de buenos momentos.
+
+PD: Guarde la foto del fondo, me gustó mucho ❤.
+
+Att: Faby :3
+    </textarea>
+  </div>
+
+  <script>
+    // Función para mostrar el cuadro de texto cuando se hace clic en el botón
+    function mostrarTexto() {
+      var textBox = document.getElementById('text-box');
+      textBox.style.display = 'block'; // Muestra el cuadro de texto
+    }
+  </script>
+</body>
+</html>
